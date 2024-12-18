@@ -5,8 +5,8 @@ buildscript {
     ext {
         kotlin_version = '1.9.20'
         gradle_version = '8.2.2'
-        face_auth_sdk_version = '3.1.0'
-        face_liveness_sdk_version = '3.2.0'
+        face_auth_sdk_version = '3.2.3'
+        face_liveness_sdk_version = '3.2.3'
         mockito_core_version = '5.0.0'
     }
 
@@ -14,7 +14,7 @@ buildscript {
         google()
         mavenCentral()
         maven { url 'https://repo.combateafraude.com/android/release'}
-        maven { url 'https://raw.githubusercontent.com/iProov/android/master/maven/' }
+        maven { url 'https://raw.githubusercontent.com/iProov/android/patch912/maven/' }
         maven { url 'https://maven.fpregistry.io/releases' }
         maven { url 'https://jitpack.io' }
     }
