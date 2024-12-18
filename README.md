@@ -23,8 +23,8 @@ Ensure compliance with our [Privacy Policy](https://en.caf.io/politicas/politica
 | SDK                         | Version |
 | --------------------------- | ------- |
 | FaceLiveness                | 3.2.3   |
-| iProov Biometrics           | 9.0.4   |
-| Fingerprint Pro             | 2.4.0   |
+| iProov Biometrics           | 9.1.2   |
+| Fingerprint Pro             | 2.7.0   |
 
 ### iOS
 
