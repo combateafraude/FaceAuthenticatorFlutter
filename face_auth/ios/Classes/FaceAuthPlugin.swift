@@ -1,6 +1,6 @@
 import Flutter
 import UIKit
-import FaceAuth
+import CafFaceAuth
 import FaceLiveness
 
 public class FaceAuthPlugin: NSObject, FlutterPlugin, FlutterStreamHandler {
@@ -100,11 +100,11 @@ extension FaceAuthPlugin: FaceAuthSDKDelegate {
         faceAuth = nil
     }
     
-    public func didFinishWithError(with faceAuthenticatorErrorResult: FaceAuth.FaceAuthenticatorErrorResult) {
+    public func didFinishWithError(with faceAuthenticatorErrorResult: CafFaceAuth.FaceAuthenticatorErrorResult) {
         sdkResult["event"] = Constants.eventError
         sdkResult["errorType"] = faceAuthenticatorErrorResult.errorType?.rawValue
         sdkResult["errorDescription"] = faceAuthenticatorErrorResult.description
-        
+
         self.sink?(sdkResult)
         self.sink?(FlutterEndOfEventStream)
         faceAuth = nil
