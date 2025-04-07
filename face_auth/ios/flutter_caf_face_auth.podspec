@@ -3,8 +3,8 @@
 # Run `pod lib lint face_auth.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'caf_face_auth'
-  s.version          = '5.0.0'
+  s.name             = 'flutter_caf_face_auth'
+  s.version          = '1.0.0'
   s.summary          = 'A Flutter plugin for Caf.io solution for facial authentication.'
   s.description      = <<-DESC
 This Flutter plugin provides functionalities to incorporate facial authentication with proof of life verification and fingerprint authentication technology into your Flutter application. This integration is ideal for enhancing login flows secure way to authenticate users.
@@ -20,6 +20,6 @@ This Flutter plugin provides functionalities to incorporate facial authenticatio
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
   s.swift_version = '5.3.2'
   s.dependency 'Flutter'
-  s.dependency 'CafFaceAuth', '6.2.1'
+  s.dependency 'CafFaceAuth', '6.3.0'
   # Add static framework? s.static_framework = true
 end

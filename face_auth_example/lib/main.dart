@@ -1,7 +1,7 @@
-import 'package:caf_face_auth/face_auth.dart';
-import 'package:caf_face_auth/face_auth_enums.dart';
-import 'package:caf_face_auth/face_auth_events.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_caf_face_auth/face_auth.dart';
+import 'package:flutter_caf_face_auth/face_auth_enums.dart';
+import 'package:flutter_caf_face_auth/face_auth_events.dart';
 
 void main() {
   runApp(const MyApp());
@@ -51,7 +51,7 @@ class _MyAppState extends State<MyApp> {
       } else if (event is FaceAuthEventFailure) {
         print(
           'Failure! Error type: ${event.errorType}, '
-              'Error description: ${event.errorDescription}',
+          'Error description: ${event.errorDescription}',
         );
       }
     });
@@ -66,7 +66,7 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Center(
           child: ElevatedButton(
-            onPressed:  () {
+            onPressed: () {
               startSDK();
             },
             child: const Text('Start FaceAuth'),
