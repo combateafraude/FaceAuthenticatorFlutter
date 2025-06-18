@@ -31,6 +31,7 @@ class _MyAppState extends State<MyApp> {
     _faceAuth.setStage(CafStage.prod);
     _faceAuth.setCameraFilter(CameraFilter.natural);
     _faceAuth.setEnableScreenshots(true);
+    _faceAuth.setCustomLocalization('Test');
   }
 
   void startSDK() {
