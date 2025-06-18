@@ -1,6 +1,6 @@
 name: flutter_caf_face_auth
 description: "A Flutter plugin for Caf.io solution for facial authentication. This Flutter plugin provides functionalities to incorporate facial authentication with proof of life verification and fingerprint authentication technology into your Flutter application. This integration is ideal for enhancing login flows secure way to authenticate users."
-version: 1.0.1
+version: 1.0.2
 homepage: https://www.caf.io/
 
 environment:
