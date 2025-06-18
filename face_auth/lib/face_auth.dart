@@ -20,6 +20,7 @@ class FaceAuth {
   bool? enableScreenshot;
   bool? enableLoadingScreen;
   UrlExpirationTime? imageUrlExpirationTime;
+  String? customLocalization;
 
   FaceAuth({required this.mobileToken, required this.personId});
 
@@ -52,6 +53,11 @@ class FaceAuth {
     imageUrlExpirationTime = time;
   }
 
+  /// Set the custom localization for customize iproov strings.
+  void setCustomLocalization(String localization) {
+    customLocalization = localization;
+  }
+
   Stream<FaceAuthEvent> start() {
     Map<String, dynamic> params = {};
 
@@ -62,6 +68,7 @@ class FaceAuth {
     params['enableScreenshot'] = enableScreenshot;
     params['enableLoadingScreen'] = enableLoadingScreen;
     params['imageUrlExpirationTime'] = imageUrlExpirationTime?.stringValue;
+    params['customLocalization'] = customLocalization;
 
     _faceAuthMethodChannel.invokeMethod('start', params);
 

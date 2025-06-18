@@ -2,6 +2,11 @@
 
 It is a continuation of the [`new_face_authenticator`](https://pub.dev/packages/new_face_authenticator) package, with updates to reflect the new project structure.
 
+## [1.0.2] - 2025-06-18
+
+### Highlights
+
+- Improved builder to set custom localization strings.
 
 ## [1.0.1] - 2025-06-18
 
