@@ -64,6 +64,10 @@ public class FaceAuthPlugin: NSObject, FlutterPlugin, FlutterStreamHandler {
             _ = mFaceAuthBuilder.setImageUrlExpirationTime(time: getExpirationTime(time: expirationTime))
         }
 
+        if let customLocalization = arguments["customLocalization"] as? String ?? nil {
+            _ = mFaceAuthBuilder.setCustomLocalization(named: customLocalization)
+        }
+
         //FaceAuthenticator Build
         self.faceAuth = mFaceAuthBuilder.build()
         faceAuth?.delegate = self
