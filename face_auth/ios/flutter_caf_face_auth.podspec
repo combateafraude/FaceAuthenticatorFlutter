@@ -20,6 +20,6 @@ This Flutter plugin provides functionalities to incorporate facial authenticatio
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
   s.swift_version = '5.3.2'
   s.dependency 'Flutter'
-  s.dependency 'CafFaceAuth', '6.3.1'
+  s.dependency 'CafFaceAuth', '6.4.0'
   # Add static framework? s.static_framework = true
 end
